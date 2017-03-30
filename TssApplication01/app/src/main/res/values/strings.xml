@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TssApplication01</string>
+    <string name="login_title">ログイン画面</string>
+    <string name="login_login_id">ログインID</string>
+    <string name="login_password">パスワード</string>
+    <string name="login_switch">記憶</string>
+    <string name="login_button">ログイン</string>
+</resources>

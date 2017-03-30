@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.app03_005.tssapplication01.LoginActivity"
+    android:background="@color/colorBackGray">
+
+    <!--ログイン画面-->
+
+    <!--画面タイトル-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_title"
+        android:id="@+id/login_textView_title"
+        android:textSize="18sp" />
+
+    <!--ログインID入力フォーム上ラベル-->
+
+    <!--ログインID記憶スウィッチ-->
+    <Switch
+        android:text="@string/login_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_switch_login"
+        android:layout_alignTop="@+id/login_textField_login"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--ログインID入力フォーム-->
+
+
+    <!--パスワード入力フォーム上ラベル-->
+
+    <!--パスワード入力フォーム-->
+
+    <!--パスワード記憶スウィッチ-->
+
+
+    <!--ログインボタン-->
+    <Button
+        android:text="@string/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_textField_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:id="@+id/login_button_login" />
+
+    <Switch
+        android:text="@string/login_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_switch_password"
+        android:layout_alignBaseline="@+id/login_textField_password"
+        android:layout_alignBottom="@+id/login_textField_password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_switch_password"
+        android:layout_toRightOf="@+id/login_switch_password"
+        android:layout_toEndOf="@+id/login_switch_password"
+        android:layout_marginTop="18dp"
+        android:id="@+id/login_textView_info" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="39dp"
+        android:id="@+id/login_textField_login"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_below="@+id/login_textView_title"
+        android:layout_toRightOf="@+id/login_switch_login"
+        android:layout_toEndOf="@+id/login_switch_login" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="49dp"
+        android:id="@+id/login_textField_password"
+        android:background="@color/colorWhite"
+        android:layout_below="@+id/login_switch_login"
+        android:layout_alignLeft="@+id/login_textField_login"
+        android:layout_alignStart="@+id/login_textField_login" />
+
+    <TextView
+        android:text="@string/login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_textView_password"
+        android:layout_above="@+id/login_switch_password"
+        android:layout_alignLeft="@+id/login_textField_password"
+        android:layout_alignStart="@+id/login_textField_password" />
+
+    <TextView
+        android:text="@string/login_login_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_textView_login"
+        android:layout_above="@+id/login_switch_login"
+        android:layout_alignLeft="@+id/login_textField_login"
+        android:layout_alignStart="@+id/login_textField_login" />
+
+
+</RelativeLayout>
